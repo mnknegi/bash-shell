@@ -1,0 +1,11 @@
+#! /bin/bash
+
+employee="Mayank" # user defined variables are always lowercase.
+
+echo "Dear ${employee}" # parameter expension
+echo "Thanks for the hardwork you have done in this year for the company."
+echo "Keep it up the good work ${employee}"
+echo "Best wishes,"
+echo "Ben, CEO"
+
+exit 0
