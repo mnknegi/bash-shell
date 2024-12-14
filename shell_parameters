@@ -1,0 +1,35 @@
+#! /bin/bash
+
+# Predefined environment variables
+
+# Variable	Description
+# $HOME	Path to the home directory of the current user.
+# $USER	The username of the current user.
+# $PATH	List of directories to search for executables.
+# $PWD	The current working directory.
+# $OLDPWD	The previous working directory.
+# $SHELL	The current shell (like /bin/bash).
+# $EDITOR	The default text editor (like vim or nano).
+# $HOSTNAME	The name of the system or machine.
+# $UID	The user ID of the current user.
+# $SECONDS	The number of seconds since the script started running.
+# $RANDOM	Returns a random number (between 0 and 32767).
+# $LINENO	The current line number in the script.
+# $PS1 The prompt string (what you see in the command line, like user@host$).
+#
+
+echo $HOME
+echo $USER
+echo $PATH
+echo $PWD
+echo $OLDPWD
+echo $SHELL
+echo $EDITOR
+echo $HOSTNAME
+echo $UID
+echo $SECONDS
+echo $RANDOM
+echo $LINENO
+echo $PS1
+
+exit 0
