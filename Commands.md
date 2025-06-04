@@ -28,3 +28,63 @@
 
 - Change file permission
 > chmod 744 [file_name]
+
+- Check system path
+> echo $PATH
+
+- Update the PATH environment variable inside `~/.bash_profile`.
+> export PATH="$PATH:$HOME/Documents/bash-shell/bash-course/scripts"
+
+- Reload current login shell
+> source ~/.bash_profile
+
+- Check bash version
+> echo $BASH_VERSION
+`output:` 3.2.57(1)-release
+
+- First letter lowercase
+```
+name="MaYaNk"
+echo ${name,}
+```
+`output:` maYaNk
+
+- All letters lowercase
+```
+name="MaYaNk"
+echo ${name,,}
+```
+`output:` mayank
+
+- First letter uppercase
+```
+echo ${USE^^}
+```
+`output:` Mnk
+
+- All letters uppercase
+```
+echo ${USER,,}
+```
+`output:` MNK
+
+- Length of a variable
+```
+name="Mayank"
+echo ${#name}
+```
+`output:` 6
+
+- Slicing(Substring expension)
+e.g. {parameter:offset:length}
+```
+numbers=0123456789
+echo ${numbers:0:7}
+echo ${numbers:3}
+echo ${numbers:3:}
+echo ${numbers:-3:2}
+```
+`output:` 0123456
+`output:` 3456789
+`output:` 
+`output:` 78
