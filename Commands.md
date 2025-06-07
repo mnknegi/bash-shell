@@ -151,3 +151,70 @@ echo $((mathematical_expression))
 
 > echo {1..15..3} #{lowerbound..upperbound..step}
 `output:` 1 4 7 10 13
+
+- 5 step process
+> Tokenisation
+> Command Identification
+> Expansions
+> Quote Removal
+> Redirection
+
+- Data Streams
+```
+data stream input: 0
+data stream output: 1
+data stream error: 2
+```
+
+> Standard input
+`<`
+
+> Standard output
+`>`
+
+> Standard error
+`2>`
+
+> Standard output & error
+`&>`
+
+> Standard output with append
+`>>`
+
+> Standard error with append
+`2>>`
+
+> Standard output & error with append
+`&>>`
+
+- Special Parameters
+> $# (numbers of parameters which a script takes)
+> $0 (name of the script)
+
+```
+if [[ $# -ne 2 ]]; then
+    echo "You didn't enter exactly 2 parameters."
+    echo "Usage: $0 <file> <file>"
+    exit 1
+fi
+```
+
+> $@ (represents all the arguments passed to the script or function)
+> $* (same as $@)
+> "$@" (represents all arguments and preserves each argument as a separate quoted string)
+> "$*" (Useful if you want all args as one string)
+
+- User Input
+```
+read "Enter your name: " name
+echo "My name is $name"
+```
+
+- Adding timeout for a prompt
+> read -t 5 -p "Enter your name: " name
+
+- Adding letter restriction
+> read -n 4 -p "Enter your 4 digit pin: " pin
+
+- Secure prompt entry
+> read -s -p "Enter your system password: " password
